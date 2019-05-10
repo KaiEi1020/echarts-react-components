@@ -1,0 +1,74 @@
+{
+  "name": "@zcy/echarts-react-components",
+  "version": "0.0.1",
+  "description": "echarts-react-components",
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "main": "./lib/index",
+  "module": "./es/index",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "homepage": "https://git.cai-inc.com/bigdata/fe/zcy-echarts-front",
+  "license": "MIT",
+  "config": {
+    "port": 8003
+  },
+  "scripts": {
+    "build": "rc-tools run storybook-build",
+    "compile": "rc-tools run compile --babel-runtime",
+    "gh-pages": "npm run build && rc-tools run storybook-gh-pages",
+    "start": "rc-tools run storybook",
+    "pub": "rc-tools run pub --babel-runtime",
+    "lint": "rc-tools run lint",
+    "lint:fix": "rc-tools run lint --fix",
+    "prettier": "rc-tools run prettier",
+    "test": "rc-tools run test",
+    "prepublish": "rc-tools run guard",
+    "init-tslint": "rc-tools run gen-lint-config",
+    "init-storybook": "rc-tools run genStorybook",
+    "coverage": "rc-tools run test --coverage",
+    "pre-commit": "rc-tools run pre-commit",
+    "storybook": "rc-tools run storybook",
+    "lint-staged": "lint-staged",
+    "now-build": "npm run build"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.15",
+    "@types/react": "^16.7.17",
+    "@types/react-dom": "^16.0.11",
+    "@types/warning": "^3.0.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-to-json": "^3.1.4",
+    "jsonp": "^0.2.0",
+    "lint-staged": "^8.1.0",
+    "pre-commit": "1.x",
+    "querystring": "^0.2.0",
+    "rc-dialog": "7.3.1",
+    "rc-test": "^6.0.1",
+    "rc-tools": "^9.4.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "echarts": "^4.2.1",
+    "fast-deep-equal": "^2.0.1",
+    "size-sensor": "^0.2.4"
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run pre-commit",
+      "git add"
+    ]
+  }
+}
