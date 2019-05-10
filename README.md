@@ -3,7 +3,7 @@
 ---
 echarts webpack dynamic imports solution for React project 
 ## introduce
-鉴于引入整个 react 中引入整个 echarts 项目体积偏大,so 提供了一个 echarts 动态引入方案
+鉴于react项目中引入整个echarts体积偏大,so 提供了一个 echarts 动态引入方案
 
 ## install
 
