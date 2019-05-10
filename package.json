@@ -1,5 +1,5 @@
 {
-  "name": "@zcy/echarts-react-components",
+  "name": "echarts-react-components",
   "version": "0.0.1",
   "description": "echarts-react-components",
   "keywords": [
@@ -12,7 +12,7 @@
     "es",
     "lib"
   ],
-  "homepage": "https://git.cai-inc.com/bigdata/fe/zcy-echarts-front",
+  "homepage": "https://github.com/KaiEi1020/echarts-react-components",
   "license": "MIT",
   "config": {
     "port": 8003
