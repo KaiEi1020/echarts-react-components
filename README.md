@@ -8,7 +8,7 @@ echarts webpack dynamic imports solution for React project
 ## install
 
 ```
-$npm i @zcy/echart-react-components
+$npm i echart-react-components
 ```
 
 ## Usage
